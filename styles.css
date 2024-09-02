@@ -1,0 +1,300 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: slide-in 1s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcb05;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #ffcb05;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 1.5s ease-in forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+footer {
+    background: linear-gradient(135deg, #2c3e50, #4a90e2);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+footer .social-icons {
+    margin: 20px 0;
+}
+
+footer .social-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: transform 0.3s, color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #ffcb05;
+    transform: scale(1.2);
+}
+
+footer .separator {
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    margin: 20px auto;
+    opacity: 0.3;
+}
+
+footer small {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #d1d1d1;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: 
+        linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)),
+        url('SEKOLAH.png'); /* Ganti dengan path gambar latar Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Efek parallax */
+    color: #fff; /* Sesuaikan warna teks untuk kontras */
+}
+
+header, .container, footer {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparan untuk keterbacaan */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+header h1 {
+    color: #fff; /* Pastikan teks header terbaca */
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+p, .cta-button, nav ul li a, footer p, footer small {
+    color: #333; /* Sesuaikan warna teks */
+}
+
+/* Efek Fade-in untuk animasi */
+.fade-in {
+    opacity: 0;
+    animation: fade-in 1.5s ease-in forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer Mewah */
+footer {
+    background: linear-gradient(135deg, #2c3e50, #4a90e2);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer .social-icons {
+    margin: 20px 0;
+}
+
+footer .social-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: transform 0.3s, color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #ffcb05;
+    transform: scale(1.2);
+}
+
+footer .separator {
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    margin: 20px auto;
+    opacity: 0.3;
+}
+
+footer small {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #d1d1d1;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px; /* Sesuaikan ukuran logo */
+    height: auto;
+    margin-right: 50px; /* Jarak antara logo dan tulisan */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: slide-in 1s ease-out;
+    color: black;
+}
+.announcement {
+    background-color: #ffe0b2; /* Warna oranye muda untuk latar belakang pengumuman */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.announcement h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.announcement ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.announcement ul li {
+    margin-bottom: 10px;
+}
