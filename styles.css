@@ -278,23 +278,53 @@ header h1 {
     animation: slide-in 1s ease-out;
     color: black;
 }
+/* Pengumuman */
 .announcement {
-    background-color: #ffe0b2; /* Warna oranye muda untuk latar belakang pengumuman */
-    padding: 20px;
+    background-color: #e67e22; /* Warna latar belakang oranye */
+    color: white; /* Warna teks putih */
     border-radius: 10px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcement:hover {
+    transform: scale(1.02); /* Efek hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .announcement h3 {
-    color: black;
-    margin-bottom: 10px;
+    color: white; /* Warna judul pengumuman putih */
+    margin-top: 0;
+}
+
+.announcement p, .announcement ul li {
+    color: white; /* Warna teks dan item daftar putih */
 }
 
 .announcement ul {
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
 }
 
 .announcement ul li {
     margin-bottom: 10px;
+}
+
+.announcement .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.announcement .cta-button:hover {
+    background-color: #34495e;
 }
